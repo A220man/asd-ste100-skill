@@ -92,8 +92,9 @@ These six habits cover most of what makes machine-written English hard to parse.
 4. Rewrite each flagged sentence to fix the violation while preserving the original meaning exactly. If a rewrite would drop necessary precision (a safety condition, a scope qualifier, a number), keep the longer phrasing and flag it instead of silently simplifying.
    - **Check modality before you commit to a rewrite.** Hedges ("may", "could", "sometimes", "is likely to") carry the author's confidence, and confidence is content. A shorter sentence that upgrades a hedge to a fact is not a simplification — it is a different claim. This is the most common way a well-intentioned STE rewrite goes wrong, because hedges are exactly what a length cap tempts you to cut.
    - Never add a fact the source did not state. A rewrite that reads better because it supplies a cause, a frequency, or a mechanism has stopped being a rewrite.
-5. Output the rewritten text (see Output Format). Keep the mode choice and the rule analysis internal unless the user asked to see them.
-6. If the input already complies, say so — do not force changes onto compliant text.
+5. If the rewrite-fidelity skill is installed, run it on the original and the rewrite and fix any real meaning change.
+6. Output the rewritten text (see Output Format). Keep the mode choice and the rule analysis internal unless the user asked to see them.
+7. If the input already complies, say so — do not force changes onto compliant text.
 
 ## Output Format
 
